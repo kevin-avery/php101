@@ -5,6 +5,9 @@
   </head>
   <body>
     <!-- Add your PHP code in the tag below -->
-    <p></p>
+    <p><?php $total = 1 + 2 + 3 + 4; ?> 
+     	<?php echo $total; ?> 
+
+    </p>
   </body>
 </html>

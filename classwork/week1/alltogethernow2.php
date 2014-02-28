@@ -5,7 +5,26 @@
   </head>
   <body>
     <p>Create two variables one called $guess and another called $number.</p>
-    <?php // Write your else if statement to check if the guess is correct
-    ?>
+    <?php   
+
+    $guess =   4;   
+    $number = 42;
+
+       if ($guess < $number)
+
+        	{
+          echo "too low";
+        	}
+        else if ($guess > $number) 
+          	{
+            echo "too high";
+          	}
+
+          else
+          	{
+          		echo "you guessed right!";
+      		}
+      
+      ?>
   </body>
 </html>

@@ -5,6 +5,8 @@
   </head>
   <body>
     <!-- Add your PHP code in the tag below -->
-    <p></p>
+    <p><?php " me!" . $name; ></p>
+    <?php $name = "kevin"; >
+    echo foo
   </body>
 </html>
