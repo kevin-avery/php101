@@ -47,6 +47,37 @@
             "balance" => 275
           )
         );
+
+
+        foreach ($pokerPlayers as $key => $player) {
+          foreach ($player as $prop => $value) {
+            $playerCard = array();
+            if (is_array($value)) {
+              echo $value[0]['suit'];
+              foreach ($value as $hand => $card) {
+                $playerCard[$hand] = $card;
+
+              }
+
+            }
+
+            if ($player['name'] == 'Tom') {
+              $player['bet'] = 75;
+              $player['balance'] = $player['balance'] - $player['bet'];
+
+            }
+            if ($player['name'] == 'Frank') {
+              $player['bet'] = 300;
+              $player['balance'] = $player['balance'] - $player['bet'];
+
+          }
+
+            echo $player['name'] . ' : ' . $player['bet'];
+            echo '<br>';
+            echo $player['suit'] . ' : ' . $player['face'];
+        }
+      }
+
         // iterate over the array inside on an unordered list tag
         // based on the value of the hand of each player, using your judgement place a bet for each player (fold, bet or all in)
         // substract that amount from the balance of each player and set that value in the array

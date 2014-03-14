@@ -6,6 +6,17 @@
   <body>
     <?php
     // assign your name to a variable
+    $myName = 'kevin michael avery';
+
+    $myNameArr = explode(' ', $myName);
+    rsort($myNameArr);
+    $myNameArr = implode (' ', myNameArr);
+
+    var_dump($myName);
+
+
+
+
     // explode your name to an array
     // reverse the array and the join it
 
